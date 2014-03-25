@@ -2,6 +2,7 @@
 #define MRUBY_ARDUINO_H
 
 #if defined(MPIDE) || defined(__SAM3X8E__)
+	#define ARDUINO_ARCH_SAM
 	#define MRUBY_ARDUINO_BOARD_CHIPKIT_OR_DUE
 	/*#pragma message "Arduino Due or chipKITMax32 detected"*/
 #elif defined(BOARD_discovery_f4)
